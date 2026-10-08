@@ -1,0 +1,22 @@
+Snellius job 27780417, 1x A100, 29 min. Split seed 42.
+
+Loaded 100000 samples from eindhoven_centraal.pkl, containing in total 2358008 trajectories of 30 frames.
+
+Using 10000 samples.
+Split with seed 42: 7000 train, 1000 validation, 2000 test samples.
+{'vel_mean': [0.02959815040230751, -0.0365561880171299], 'vel_std': [0.2190628945827484, 0.6856278777122498], 'rel_std': [0.472485214471817, 1.809843897819519], 'pos_mean': [-2.219651937484741, 30.2630615234375], 'pos_std': [2.8882787227630615, 19.859655380249023]}
+gamma_k: [0.798, 0.776, 0.728, 0.697, 0.658, 0.624, 0.601, 0.571, 0.552, 0.53, 0.515, 0.496, 0.483, 0.469, 0.454, 0.444, 0.431, 0.42, 0.408, 0.398]
+2000 test samples, 20 futures each, 16 Euler steps
+Pointwise metrics [m]          ADE         FDE   min20 ADE   min20 FDE
+Uninformed prior             0.971       2.069       0.668       1.307
+Informed prior               0.927       1.869       0.657       1.244
+Binned KL(model || ground truth) [nats]          speed  acceleration    tortuosity       closest
+Uninformed                                      0.0192        0.0752        0.0173        0.0326
+Informed                                        0.0184        0.0749        0.0152        0.0323
+Collision rate at r = 0.30 m
+  Ground truth             0.6367%
+  Uninformed               2.5762%
+  Informed                 2.5672%
+Transport cost E||x_0 - x_1||^2 per pedestrian (noise floor 2Kσ² = 40.000)
+  Uninformed               77.549   above floor: 37.549
+  Informed                 65.451   above floor: 25.451
